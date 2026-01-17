@@ -1,6 +1,6 @@
 context:
   name: shs-cassini-headers
-  version: "13.0.0"
+  version: 13.0.0
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/HewlettPackard/shs-cassini-headers/archive/refs/tags/release/shs-${{ version }}.tar.gz
-    sha256: 4b125d548860ec163604c89306aef4914d109a8c1ad50f2ed6dfec054e4d274e  # Tagged release 12.0.1, aligns with spec version 1.1.1
+    sha256: 69152b3e2a827812e1cd38deb12a0c7ed37d99ea914850ce23b0e38b2588c50d
 
 build:
   number: 0
