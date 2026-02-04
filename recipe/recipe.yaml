@@ -1,6 +1,6 @@
 context:
   name: shs-cassini-headers
-  version: 13.0.0
+  version: "13.1.0"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/HewlettPackard/shs-cassini-headers/archive/refs/tags/release/shs-${{ version }}.tar.gz
-    sha256: 69152b3e2a827812e1cd38deb12a0c7ed37d99ea914850ce23b0e38b2588c50d
+    sha256: d4f3002c49b4e04730a7784b4051d0173e7454da88992707fa2e583e723ee2f9
 
 build:
   number: 0
@@ -17,8 +17,8 @@ build:
 
 tests:
   - script:
-    - test -f ${PREFIX}/include/sbl/sbl_pml.h
-    - test -f ${PREFIX}/share/cassini-headers/csr_defs.json
+      - test -f ${PREFIX}/include/sbl/sbl_pml.h
+      - test -f ${PREFIX}/share/cassini-headers/csr_defs.json
 
 about:
   homepage: https://github.com/HewlettPackard/shs-cassini-headers
